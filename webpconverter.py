@@ -7,14 +7,14 @@ while True:
     img = input("Enter Name of img to convert: \n")
     tst = img[-5:]
     
-    if ".webp" not in tst:
+    if ".jpeg" in tst:
+        print("Already a JPEG!")
+        exit()
+    elif ".jpg" in tst:
+        print("Already a JPEG!")
+        exit()
+    elif ".webp" not in tst:
         img = img+".webp"
-    elif ".jpeg" not in tst:
-        print("Already a JPEG!")
-        exit()
-    elif ".jpg" not in tst:
-        print("Already a JPEG!")
-        exit()
         
     noext = img[:-5]
     im = Image.open(img).convert("RGB")

@@ -1,6 +1,8 @@
 # Webp-to-JPEG-converter
 Simple python script to convert webp images to jpeg's
 
+(Made in windows, if using linux change line 22 to: "os.system("rm -rf "+img)" )
+
 1. git clone https://github.com/00-Python/Webp-to-JPEG-converter.git
 2. cd Webp-to-JPEG-converter
 3. pip install -r requirements.txt

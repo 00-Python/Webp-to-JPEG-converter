@@ -11,8 +11,10 @@ while True:
         img = img+".webp"
     elif ".jpeg" not in tst:
         print("Already a JPEG!")
+        exit()
     elif ".jpg" not in tst:
         print("Already a JPEG!")
+        exit()
         
     noext = img[:-5]
     im = Image.open(img).convert("RGB")
